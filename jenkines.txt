@@ -1,0 +1,31 @@
+Hi all  for jenkines,
+
+Please follow the below commands to install Jenkins in ubuntu, after that please follow the attached document.
+
+sudo bash
+
+sudo apt-get install apt-transport-https ca-certificates -y
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+sudo apt-get update
+
+sudo apt-get install openjdk-8-jdk
+
+sudo apt-get install jenkins
+
+service jenkins start
+
+
+muraLi123@-->git
+
+
+http://3.84.241.177:8080/
+
+Form Mobaxterm
+chmod 777 -R /opt/apache-tomcat-9.0.10
+
+Form Jenkins job (Execute shell)
+cp /var/lib/jenkins/workspace/pipe4-git-jenkins-tomcat/* /opt/apache-tomcat-9.0.10/webapps/paytm/
